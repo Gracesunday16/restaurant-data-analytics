@@ -3,6 +3,10 @@
 ## Project Overview
 This project is the culmination of my Data Analytics Internship at Cognifyz Technologies, where I performed an in-depth analysis of restaurant data to uncover business insights and geographical patterns.
 The goal was to explore restaurant chains, analyze customer engagement through ratings and views, and identify spatial clusters using geolocation data.
+
+## Data Source
+The dataset was provided by Cognifyz Technologies as part of my Python internship project. It contains information on restaurant names, cuisines, ratings, views, and locations.
+
 ## Key Objectives
 Identify restaurant chains by detecting restaurants with the same name across multiple locations.
 
@@ -15,7 +19,6 @@ Visualize restaurant spread and clusters using scatter plots and matplotlib.
 Provide actionable insights on restaurant performance and regional concentration.
 
 ## Tools & Technologies 
-
 Python
 
 Pandas for data manipulation 
@@ -29,7 +32,6 @@ Data Cleaning & Transformation
 Exploratory Data Analysis (EDA)
 
 Matplotlib and Seaborn for data visualisation 
-
 
 ## Why This Project Matters
 Restaurant owners, marketers, and analysts can use this kind of analysis to:
