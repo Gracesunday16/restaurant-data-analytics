@@ -14,16 +14,22 @@ Visualize restaurant spread and clusters using scatter plots and matplotlib.
    
 Provide actionable insights on restaurant performance and regional concentration.
 
-## Skills & Tools Used
-Python (Pandas, NumPy, Matplotlib, Seaborn)
+## Tools & Technologies 
 
-DBSCAN (from scikit-learn) for spatial clustering
+Python
+
+Pandas for data manipulation 
+
+NumPy for numerical operations
+
+Scikit-learn (DBSCAN) for clustering
 
 Data Cleaning & Transformation
 
 Exploratory Data Analysis (EDA)
 
-Geolocation-based clustering
+Matplotlib and Seaborn for data visualisation 
+
 
 ## Why This Project Matters
 Restaurant owners, marketers, and analysts can use this kind of analysis to:
