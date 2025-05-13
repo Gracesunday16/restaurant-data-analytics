@@ -1,4 +1,4 @@
-# Restaurant Insights & Clustering Analysis 
+# Restaurant Data Analytics: A Multi-Level Analysis Project 
 
 ## Table of content
 - [Project Overview](#project-overview)
