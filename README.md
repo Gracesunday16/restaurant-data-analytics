@@ -20,7 +20,7 @@ The goal was to explore restaurant chains, analyze customer engagement through r
 
 ## Project Overflow
 
-![image alt](https://github.com/Gracesunday16/Restaurant-analysis-/blob/13d5681e8d0f9005e9414ed278d419313669ea90/Workflow%20diagram.pptx)
+![image alt](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/8f354df056224490c8026f93f5706bbdfc4c3c28/Workflow.PNG)
 
 ## Data Source
 
