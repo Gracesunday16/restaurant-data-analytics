@@ -67,6 +67,8 @@ The following task was performed in the initial data preparation phase:
 Several python functions were used to understand the structure of the data, check for null values, number of rows and columns,column names and data type
 
 ## Data Analysis 
+
+- [View the Jupyter Notebook]
 ```
  Python
 
