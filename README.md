@@ -68,7 +68,8 @@ Several python functions were used to understand the structure of the data, chec
 
 ## Data Analysis 
 ```
- python
+ Python
+
 # BAR CHART SHOWING DISTRIBUTION OF PRICE RANGES AMONG THE RESTAURANTS
 
 # Count occurrences of each price range
@@ -91,9 +92,11 @@ plt.xticks(price_counts.index)
 plt.show()
 ```
 
+![image alt](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/7cadebfb3bcead4be56608e4b5bcebb36e64050b/Distribution%20of%20Price%20Range%20Among%20Restaurants.png)
 
 ```
-python
+Python
+
 MAP DISPLAYING THE LOCATIONS OF RESTAURANTS
 
 coords = df[['Latitude', 'Longitude']]
@@ -121,6 +124,45 @@ cluster_counts = df['Cluster'].value_counts()
 print(cluster_counts)
 ```
 ![image alt](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/7cadebfb3bcead4be56608e4b5bcebb36e64050b/Restaurants%20location.png)
+
+```
+Python
+
+CORRELATION BETWEEN NUMBER OF VOTES AND RATING OF RESTAURANTS
+
+correlation = df['Votes'].corr(df['Aggregate rating'])
+print(f"Correlation between votes and rating : {correlation}")
+
+# Scatter plot of votes vs. rating to visualize the correlation
+plt.figure(figsize=(8,5))
+sns.scatterplot(x=df['Votes'], y=df['Aggregate rating'])
+plt.xlabel("Number of Votes")
+plt.ylabel("Aggregate rating")
+plt.title("Votes vs Rating of Restaurants")
+plt.show()
+```
+![image alt](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/7cadebfb3bcead4be56608e4b5bcebb36e64050b/Correlation%20between%20votes%20and%20ratings.png)
+
+```
+Python
+
+DISTRIBUTION OF AGGREGATE RATINGS
+
+plt.figure (figsize= (10, 6))
+plt.hist(df['Aggregate rating'], bins=10, color= 'skyblue', edgecolor= 'black')
+plt.title ("Distribution of Aggregate Ratings")
+plt.xlabel= ("Aggregate rating")
+plt.ylabel= ("Frequeny")
+plt.show()
+
+# Define rating ranges
+bins = [0, 1, 2, 3, 4, 5]  
+
+# Labels for ranges
+labels = ['0-1', '1-2', '2-3', '3-4', '4-5']  
+df['Rating Range'] = pd.cut(df['Aggregate rating'], bins=bins, labels=labels, include_lowest=True)
+```
+![image alt](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/7cadebfb3bcead4be56608e4b5bcebb36e64050b/Distribution%20of%20aggregate%20ratings.png)
 
 ## Results and Findings
 - Low Customer Engagement Overall:
