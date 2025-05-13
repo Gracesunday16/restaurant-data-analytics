@@ -20,6 +20,8 @@ The goal was to explore restaurant chains, analyze customer engagement through r
 
 ## Project Overflow
 
+![image alt](https://github.com/Gracesunday16/Restaurant-analysis-/blob/13d5681e8d0f9005e9414ed278d419313669ea90/Workflow%20diagram.pptx)
+
 ## Data Source
 
 The dataset was provided by Cognifyz Technologies as part of my Python internship project. It contains information on restaurant names, cuisines, ratings, views, and locations.
