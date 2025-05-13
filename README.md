@@ -18,7 +18,7 @@
 This project is the culmination of my Data Analytics Internship at Cognifyz Technologies, where I performed an in-depth analysis of restaurant data to uncover business insights and geographical patterns.
 The goal was to explore restaurant chains, analyze customer engagement through ratings and views, and identify spatial clusters using geolocation data.
 
-## Project Overflow
+## Project Overflow diagram 
 
 ![image alt](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/8f354df056224490c8026f93f5706bbdfc4c3c28/Workflow.PNG)
 
@@ -67,8 +67,6 @@ The following task was performed in the initial data preparation phase:
 Several python functions were used to understand the structure of the data, check for null values, number of rows and columns,column names and data type
 
 ## Data Analysis 
-
-- [View the Jupyter Notebook]
 ```
  Python
 
@@ -167,21 +165,14 @@ df['Rating Range'] = pd.cut(df['Aggregate rating'], bins=bins, labels=labels, in
 ![image alt](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/7cadebfb3bcead4be56608e4b5bcebb36e64050b/Distribution%20of%20aggregate%20ratings.png)
 
 ## Results and Findings
-- Low Customer Engagement Overall:
 
-  The average number of votes per restaurant is 156.91, indicating generally low customer interaction or feedback.
-
-- Weak Link Between Popularity and Ratings:
-
-  A weak positive correlation (r = 0.3) exists between votes and ratings, meaning more votes don’t strongly predict higher ratings.
-
-- Location-Based Clustering:
+- **Location-Based Clustering**:
 
   Major restaurant concentration found in a specific geographic zone, especially Cluster 41, which contains 7,549 restaurants.
 
   A smaller dense group, Cluster 29, holds 497 restaurants, while 47 outliers are scattered and identified as noise by DBSCAN.
 
-- Service Type vs. Pricing Trends:
+- **Service Type vs. Pricing Trends**:
 
   Table booking is common in expensive restaurants (price range 4)
   Only 9.04% of high-end restaurants offer online delivery, showing a preference for dine-in over delivery.
@@ -189,34 +180,41 @@ df['Rating Range'] = pd.cut(df['Aggregate rating'], bins=bins, labels=labels, in
   Cheapest restaurants (price range 1) almost never provide table booking (0.02%).
 
   Moderately priced restaurants (price range 2) are the most likely to offer online delivery (41.31%), balancing affordability with convenience.
+  
+- **Weak Link Between Popularity and Ratings**:
+
+  A weak positive correlation (r = 0.3) exists between votes and ratings, meaning more votes don’t strongly predict higher ratings.
+
 
 ## Recommendations
-- Target High-Density Restaurant Areas for Promotions:
+- **Target High-Density Restaurant Areas for Promotions**:
 
   Focus marketing, partnerships, or delivery expansion in these dense clusters where restaurant activity is high and competition is visible. It increases visibility and customer access.
 
-- Use Table Booking as a Premium Feature:
+- **Use Table Booking as a Premium Feature**:
 
   Offer exclusive table reservation in premium restaurants to maintain a luxury image. Don’t invest in table booking systems for budget restaurants — it's not expected by customers.
 
-- Expand Online Delivery in Moderately Priced Restaurants:
+- **Expand Online Delivery in Moderately Priced Restaurants**:
 
   Boost online delivery partnerships and infrastructure in mid-range restaurants. They cater to a wider audience willing to pay for convenience.
 
-- Improve Visibility and Engagement for Low-Vote Restaurants:
+- **Improve Visibility and Engagement for Low-Vote Restaurants**:
 
   Encourage customers to leave reviews and ratings through loyalty programs or post-meal nudges to build trust and increase votes.
 
-- Consider Restaurant Location Strategy:
+- **Consider Restaurant Location Strategy**:
 
   New restaurants should avoid overly saturated zones unless they offer a unique value. Underserved clusters (with fewer restaurants) might offer better opportunities for niche markets.
 
-- Pricing Strategy for Online Services:
+- **Pricing Strategy for Online Services**:
 
   Upscale restaurants could consider premium delivery experiences (e.g., personalized packaging, time slots) to expand their audience without reducing brand prestige.
   
 ## Contact
 Grace Sunday
 
-gracesunday16@gmail.com 
+gracesunday16@gmail.com
+
+[LinkedIn profile](https://www.linkedin.com/in/grace-sunday-b2b0622a6)
 
