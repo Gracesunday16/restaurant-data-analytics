@@ -120,6 +120,7 @@ cluster_counts = df['Cluster'].value_counts()
 
 print(cluster_counts)
 ```
+![image alt](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/7cadebfb3bcead4be56608e4b5bcebb36e64050b/Restaurants%20location.png)
 
 ## Results and Findings
 - Low Customer Engagement Overall:
