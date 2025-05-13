@@ -16,7 +16,7 @@
 ## Project Overview
 
 This project is the culmination of my Data Analytics Internship at Cognifyz Technologies, where I performed an in-depth analysis of restaurant data to uncover business insights and geographical patterns.
-The goal was to explore restaurant chains, analyze customer engagement through ratings and views, and identify spatial clusters using geolocation data.
+The goal was to explore restaurant chains, analyze customer engagement through ratings and reviews, and identify spatial clusters using geolocation data.
 
 ## Project Overflow diagram 
 
@@ -33,7 +33,7 @@ The dataset was provided by Cognifyz Technologies as part of my Python internshi
 - Investigate cuisine patterns and their influence on restaurant popularity
 - Examine price range distribution and its correlation with service offerings
 - Perform geographic clustering analysis to identify restaurant hotspots
-- Analyze customer review patterns and sentiment in relation to restaurant ratings
+- Analyze customer review patterns in relation to restaurant ratings
 
 ## Tools and Technologies 
 
@@ -64,7 +64,17 @@ The following task was performed in the initial data preparation phase:
 
 ### Exploratory Data Analysis
 
-Several python functions were used to understand the structure of the data, check for null values, number of rows and columns,column names and data type
+The following Python functions and methods were used to gain an initial understanding of the dataset:
+
+- **df.shape** – to determine the number of rows and columns.
+
+- **df.unique()** - to get a NumPy array of all the distinct values in each column.
+
+- **df.info()** – to check data types and non-null counts for each column.
+
+- **df.describe()** – to get summary statistics for numeric columns.
+
+- **df.isnull().sum()** – to identify columns with missing values.
 
 ## Data Analysis 
 ```
@@ -177,10 +187,10 @@ df['Rating Range'] = pd.cut(df['Aggregate rating'], bins=bins, labels=labels, in
   Table booking is common in expensive restaurants (price range 4)
   Only 9.04% of high-end restaurants offer online delivery, showing a preference for dine-in over delivery.
 
-  Cheapest restaurants (price range 1) almost never provide table booking (0.02%).
-
   Moderately priced restaurants (price range 2) are the most likely to offer online delivery (41.31%), balancing affordability with convenience.
   
+  Cheapest restaurants (price range 1) almost never provide table booking (0.02%).
+
 - **Weak Link Between Popularity and Ratings**:
 
   A weak positive correlation (r = 0.3) exists between votes and ratings, meaning more votes don’t strongly predict higher ratings.
@@ -189,7 +199,8 @@ df['Rating Range'] = pd.cut(df['Aggregate rating'], bins=bins, labels=labels, in
 ## Recommendations
 - **Target High-Density Restaurant Areas for Promotions**:
 
-  Focus marketing, partnerships, or delivery expansion in these dense clusters where restaurant activity is high and competition is visible. It increases visibility and customer access.
+  Focus marketing, partnerships, or delivery expansion in the dense clusters where restaurant activity is high and competition is visible. It will increase visibility and customer 
+  access.
 
 - **Use Table Booking as a Premium Feature**:
 
@@ -197,11 +208,7 @@ df['Rating Range'] = pd.cut(df['Aggregate rating'], bins=bins, labels=labels, in
 
 - **Expand Online Delivery in Moderately Priced Restaurants**:
 
-  Boost online delivery partnerships and infrastructure in mid-range restaurants. They cater to a wider audience willing to pay for convenience.
-
-- **Improve Visibility and Engagement for Low-Vote Restaurants**:
-
-  Encourage customers to leave reviews and ratings through loyalty programs or post-meal nudges to build trust and increase votes.
+  Boost online delivery partnerships and infrastructure in mid-range restaurants. They will cater to a wider audience that is willing to pay for convenience.
 
 - **Consider Restaurant Location Strategy**:
 
