@@ -60,6 +60,8 @@ The following task was performed in the initial data preparation phase:
 2. Handling missing values.
 3. Data cleaning and formatting
 
+![image alt](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/988c193f34ccdc2decdd90e081b4a666530aa555/Data%20cleaning%20screenshot.PNG)
+
 ### Exploratory Data Analysis
 
 Several python functions were used to understand the structure of the data, check for null values, number of rows and columns,column names and data type
