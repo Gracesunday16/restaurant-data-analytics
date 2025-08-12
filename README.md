@@ -20,7 +20,7 @@ The goal was to explore restaurant chains, analyze customer engagement through r
 
 ## Project Overflow diagram 
 
-![image alt](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/8f354df056224490c8026f93f5706bbdfc4c3c28/Workflow.PNG)
+![Project Overflow diagram](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/8f354df056224490c8026f93f5706bbdfc4c3c28/Workflow.PNG)
 
 ## Data Source
 
@@ -60,7 +60,7 @@ The following task was performed in the initial data preparation phase:
 2. Handling missing values.
 3. Data cleaning and formatting
 
-![image alt](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/988c193f34ccdc2decdd90e081b4a666530aa555/Data%20cleaning%20screenshot.PNG)
+![Data Cleaning](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/988c193f34ccdc2decdd90e081b4a666530aa555/Data%20cleaning%20screenshot.PNG)
 
 ### Exploratory Data Analysis
 
@@ -75,8 +75,32 @@ The following Python functions and methods were used to gain an initial understa
 - **df.describe()** – to get summary statistics for numeric columns.
 
 - **df.isnull().sum()** – to identify columns with missing values.
+  
+[View complete EDA and Data Cleaning](https://github.com/Gracesunday16/restaurant-data-analytics/blob/95a0ccbaf18b29e701b062790cc5e2d6a7f44233/Data%20Cleaning%20and%20EDA.ipynb)
 
-## Data Analysis 
+## Data Analysis Tasks
+
+## Level 1
+
+**Task 1: Top Cuisines**
+- Determine the top three most common cuisines in the dataset.
+- Calculate the percentage of restaurants that serve each of the top cuisines.
+
+**Task 2: City Analysis**
+- Identify the city with the highest number of restaurants in the dataset.
+- Calculate the average rating for restaurants in each city.
+- Determine the city with the highest average rating.
+
+**Task 3: Price Range Distribution**
+- Create a histogram or bar chart to visualize the distribution of price ranges among the restaurants.
+- Calculate the percentage of restaurants in each price range category.
+
+**Task 4: Online Delivery**
+- Determine the percentage of restaurants that offer online delivery.
+- Compare the average ratings of restaurants with and without online delivery.
+
+[View full solution to level 1](https://github.com/Gracesunday16/restaurant-data-analytics/blob/95a0ccbaf18b29e701b062790cc5e2d6a7f44233/Data%20analysis%20task%201.ipynb)
+
 ```
  Python
 
@@ -102,7 +126,28 @@ plt.xticks(price_counts.index)
 plt.show()
 ```
 
-![image alt](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/7cadebfb3bcead4be56608e4b5bcebb36e64050b/Distribution%20of%20Price%20Range%20Among%20Restaurants.png)
+![Price range distribution among restaurants](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/7cadebfb3bcead4be56608e4b5bcebb36e64050b/Distribution%20of%20Price%20Range%20Among%20Restaurants.png)
+
+
+## Level 2
+
+**Task 1: Restaurant Ratings**
+- Analyze the distribution of aggregate ratings and determine the most common rating range.
+- Calculate the average number of votes received by restaurants.
+
+**Task 2: Cuisine Combination**
+- Identify the most common combinations of cuisines in the dataset.
+- Determine if certain cuisine combinations tend to have higher ratings.
+
+**Task 3: Geographic Analysis**
+- Plot the locations of restaurants on a map using longitude and latitude coordinates.
+- Identify any patterns or clusters of restaurants in specific areas.
+
+**Task 4: Restaurant Chains**
+- Identify if there are any restaurant chains present in the dataset.
+- Analyze the ratings and popularity of different restaurant chains.
+
+[View full solution to level 2](https://github.com/Gracesunday16/restaurant-data-analytics/blob/95a0ccbaf18b29e701b062790cc5e2d6a7f44233/Data%20analysis%20task%202.ipynb)
 
 ```
 Python
@@ -133,7 +178,23 @@ cluster_counts = df['Cluster'].value_counts()
 
 print(cluster_counts)
 ```
-![image alt](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/7cadebfb3bcead4be56608e4b5bcebb36e64050b/Restaurants%20location.png)
+![Restaurant location](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/7cadebfb3bcead4be56608e4b5bcebb36e64050b/Restaurants%20location.png)
+
+## Level 3
+
+**Task: Restaurant Chains**
+- Identify if there are any restaurant chains present in the dataset.
+- Analyze the ratings and popularity of different restaurant chains.
+
+**Task: Votes Analysis**
+- Identify the restaurants with the highest and lowest number of votes.
+- Analyze if there is a correlation between the number of votes and the rating of a restaurant.
+
+**Task: Price Range vs. Online Delivery and Table Booking**
+- Analyze if there is a relationship between the price range and the availability of online delivery and table booking.
+- Determine if higher-priced restaurants are more likely to offer these services.
+
+[View complete solution to level 3 task](https://github.com/Gracesunday16/restaurant-data-analytics/blob/95a0ccbaf18b29e701b062790cc5e2d6a7f44233/Data%20analysis%20task%203.ipynb)
 
 ```
 Python
@@ -151,7 +212,6 @@ plt.ylabel("Aggregate rating")
 plt.title("Votes vs Rating of Restaurants")
 plt.show()
 ```
-![image alt](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/7cadebfb3bcead4be56608e4b5bcebb36e64050b/Correlation%20between%20votes%20and%20ratings.png)
 
 ```
 Python
@@ -172,7 +232,9 @@ bins = [0, 1, 2, 3, 4, 5]
 labels = ['0-1', '1-2', '2-3', '3-4', '4-5']  
 df['Rating Range'] = pd.cut(df['Aggregate rating'], bins=bins, labels=labels, include_lowest=True)
 ```
-![image alt](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/7cadebfb3bcead4be56608e4b5bcebb36e64050b/Distribution%20of%20aggregate%20ratings.png)
+![Distribution of aggregate rating](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/7cadebfb3bcead4be56608e4b5bcebb36e64050b/Distribution%20of%20aggregate%20ratings.png)
+
+
 
 ## Results and Findings
 
