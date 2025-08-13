@@ -80,7 +80,8 @@ The following Python functions and methods were used to gain an initial understa
 
 ## Data Analysis Tasks
 
-## Level 1
+
+## Level 1 task
 
 **Task 1: Top Cuisines**
 - Determine the top three most common cuisines in the dataset.
@@ -129,7 +130,7 @@ plt.show()
 ![Price range distribution among restaurants](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/7cadebfb3bcead4be56608e4b5bcebb36e64050b/Distribution%20of%20Price%20Range%20Among%20Restaurants.png)
 
 
-## Level 2
+## Level 2 task
 
 **Task 1: Restaurant Ratings**
 - Analyze the distribution of aggregate ratings and determine the most common rating range.
@@ -180,17 +181,17 @@ print(cluster_counts)
 ```
 ![Restaurant location](https://raw.githubusercontent.com/Gracesunday16/Restaurant-analysis-/7cadebfb3bcead4be56608e4b5bcebb36e64050b/Restaurants%20location.png)
 
-## Level 3
+## Level 3 task
 
-**Task: Restaurant Chains**
+**Task 1: Restaurant Chains**
 - Identify if there are any restaurant chains present in the dataset.
 - Analyze the ratings and popularity of different restaurant chains.
 
-**Task: Votes Analysis**
+**Task 2: Votes Analysis**
 - Identify the restaurants with the highest and lowest number of votes.
 - Analyze if there is a correlation between the number of votes and the rating of a restaurant.
 
-**Task: Price Range vs. Online Delivery and Table Booking**
+**Task 3: Price Range vs. Online Delivery and Table Booking**
 - Analyze if there is a relationship between the price range and the availability of online delivery and table booking.
 - Determine if higher-priced restaurants are more likely to offer these services.
 
